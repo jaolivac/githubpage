@@ -1,0 +1,187 @@
+/* Formatos */
+
+/* general */
+body {
+  background-color: var(--soft-yellow);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* main container */
+.main-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* main */
+.page-header {
+  margin-top: 45px;
+  font-family: var(--font-family-page-header);
+  text-align: center;
+  background-color: var(--soft-violet);
+  padding: 1rem 0;
+}
+
+/* classic section */
+.classic-section {
+  margin-top: 2rem;
+}
+
+.classic-section h2 {
+  color: var(--soft-violet);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.classic-items-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.classic-item {
+  position: relative;
+  width: 200px;
+}
+
+.classic-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay h3 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.classic-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--soft-orange);
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 30px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact span {
+  font-size: 14px;
+}
+
+.contact a {
+  color: inherit;
+}
+
+@media screen and (max-width: 300px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links img {
+    margin-bottom: 10px;
+  }
+}
+
+/* random */
+.random-song-section {
+  margin-top: 2rem;
+}
+
+.random-song-section h2 {
+  color: var(--soft-violet);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.random-song-container {
+  display: flex;
+  justify-content: center;
+}
+
+.random-song-item {
+  position: relative;
+  width: 200px;
+}
+
+.random-song-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.random-song-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.random-song-item:hover .overlay {
+  opacity: 1;
+}
+
+.random-song-item .overlay h3 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .classic-items-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .classic-item {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,56 @@
+  /* Formatos */
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--soft-white);
+    margin: 0;
+    font-family: var(--font-family-body);
+  }
+  
+  .error-page {
+    text-align: center;
+    background-color: var(--soft-white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-code {
+    font-size: 6rem;
+    color: var(--soft-red);
+    margin-bottom: 1rem;
+  }
+  
+  .error-message {
+    font-size: 2rem;
+    color: var(--soft-gray);
+    margin-bottom: 1rem;
+  }
+  
+  .error-description {
+    font-size: 1.2rem;
+    color: var(--soft-gray);
+    margin-bottom: 2rem;
+  }
+  
+  .back-home {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--soft-white);
+    background-color: var(--soft-orange);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-home:hover {
+        &:hover {
+            color: var(--soft-red);
+             cursor: pointer;
+         }
+  }
+  
