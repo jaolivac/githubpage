@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Vibes & Waves</title>
+    <!-- Estilo general -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- Estilo propio -->
+    <link rel="stylesheet" href="./assets/css/about-styles.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <!-- Barra de navegación -->
+      <nav class="navbar">
+        <a href="./index.html"
+          ><img id="navbar-logo" src="./assets/img/logo.svg" alt="logo"
+        /></a>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./tendencias.html">Tendencias</a></li>
+          <li><a href="./retro.html">Retro</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <img id="hamburguer-logo" src="./assets/img/icon-menu.svg" />
+        </div>
+      </nav>
+      <!-- Encabezado de página -->
+      <div class="page-header">
+        <h1>Vibes & Waves</h1>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="about-section">
+        <div class="about-img">
+          <a href="./index.html">
+            <img src="./assets/img/logo-about.svg" alt=""
+          /></a>
+        </div>
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>
+            ¡Bienvenid@ a <b>Vibes & Waves</b>! Somos tu nuevo espacio para la
+            música urbana, donde encontrarás las
+            <b>últimas noticias</b> relevantes del sector musical y descubrirás
+            tanto nuevas canciones como <b>clásicos</b>. No te pierdas nuestros
+            <b>directos recomendados</b> en la página de inicio; abarcamos todos
+            los estilos musicales. ¡Sumérgete en el mundo de la música con
+            nosotros!
+          </p>
+          <hr />
+          <p>
+            No te olvides también de seguirnos en nuestras redes sociales, donde
+            hacemos sorteos cada mes.
+          </p>
+        </div>
+        <div class="social-links">
+          <a target="_blank" href="https://www.youtube.com/"
+            ><img src="./assets/img/youtube.svg" alt="YouTube"
+          /></a>
+          <a target="_blank" href="https://x.com/"
+            ><img src="./assets/img/twitter.svg" alt="Twitter"
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/"
+            ><img src="./assets/img/instagram.svg" alt="Instagram"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact">
+        <span>Contacto:</span>
+        <a href="mailto:contacto@vibeswaves.com"
+          >jaolivac01@suarezdefigueroa.es</a
+        >
+        <span>666-555-444</span>
+      </div>
+      <div class="copyright">
+        <a href="./index.html"
+          ><img src="./assets/img/logo.svg" alt="logo"
+        /></a>
+        <span>2024 Vibes & Waves. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu");
+      const hamburguer_logo = document.querySelector("#hamburguer-logo");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+
+        if (menu.classList.contains("active")) {
+          hamburguer_logo.src = "./assets/img/icon-menu-close.svg";
+        } else {
+          hamburguer_logo.src = "./assets/img/icon-menu.svg";
+        }
+      });
+    </script>
+  </body>
+</html>
