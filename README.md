@@ -48,7 +48,7 @@ Alumno: José Antonio Oliva Cortés
 
   - URL de acceso: [URL](#).
 
-  La url de la página desplegada:
+  La url de la página desplegada: https://jaolivac.github.io/githubpage/
 
 - `Fuentes/Recursos utilizados`: Indicar las fuentes y recursos utilizados para la realización del proyecto.
 
